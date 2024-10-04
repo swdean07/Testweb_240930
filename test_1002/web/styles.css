@@ -1,55 +1,17 @@
 body {
-    margin: 0;
-}
-
-a {
-    color:rgb(119, 0, 255);
-}
-
-h1 {
-    font-size: 45px;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    margin: 0;
-}
-
-ol {
-    border-right: 1px solid gray;
-    width: 100px;
-    margin: 0;
-    padding: 20px;
-}
-
-#grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-}
-
-/* 800px보다 작을 경우 동작     */
-@media(max-width :800px){
-        #grid {
-            display: block;
-        }
-
-        #grid ol {
-            border-right: none;
-        }
-
-        h1 {
-            border-bottom: none;
-        }
-}
-
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: white;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    height: 100vh; /* 전체 화면 높이에 맞춤 */
 }
 
 .container {
     max-width: 400px;
-    margin: 0 auto;
+    width: 100%; /* 반응형 디자인을 위한 100% 너비 */
     background: white;
     padding: 20px;
     border-radius: 8px;
