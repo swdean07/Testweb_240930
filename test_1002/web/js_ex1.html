@@ -64,7 +64,6 @@
      <input id="userId" type="text" placeholder="아이디를 입력해주세요.">
      <input id="userPassword" type="text" placeholder="패스워드를 입력해주세요.">
      <input type="button" value="로그인" onclick="showUser()">
-     <input type="text" id="lunchmenu" name="lunchmenu">
      <p id="result"></p>
      <h1>점심 메뉴 입력</h1>
      <div>
@@ -72,15 +71,18 @@
         <input type="text" id="lunchmenu" name="lunchmenu">
      </div>
      <button onclick="displaylunch()">메뉴 출력</button>
+
      <h1 id="lunchOutput"></h1>
      <script>
         function showUser() {
             const id = document.getElementById("userId").value;
             const password = document.getElementById("userPassword").value;
+            const lunchmenu = document.getElementById("lunchmenu").value;
             alert("아이디: "+id + ", 패스워드: " + password)
             document.getElementById("result").innerText="아이디: "+id + ", 패스워드: " + password
         }
      </script>
+
 
 
 </body>
